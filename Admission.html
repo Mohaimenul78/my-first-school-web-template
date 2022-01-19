@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script src="index.js" ></script>
+    <title>Admission</title>
+</head>
+<body class="">
+  <div class="normel hidden lg:block ">
+  
+    <div class="bg-indigo-900">
+      <div class="w-11/12 m-auto flex justify-between">
+        <div class="flex">
+          <p class="text-gray-300 border-r border-white p-1 text-sm">Contact: Lake Road, Suite 180 Farmington Hills, U.S.A.</p>
+          <p class="text-gray-300 p-1 border-r border-white text-sm">Phone: +101-1231-1231</p>
+        </div>
+        <div class="flex ">
+          <div class="h-full flex items-center text-gray-300">
+            <a href="#"><i class="fa fa-facebook ml-2"></i></a>
+            <a href="#"><i class="fa fa-google-plus ml-2"></i></a>
+            <a href="#"><i class="fa fa-twitter ml-2"></i></a>
+          </div>
+          <div class="flex items-center ">
+            <a id="up" class="py-1 px-2 text-sm text-white bg-blue-700 mx-2" href="#">Sign In</a>
+            <a id="in" class="py-1 px-2 text-sm text-white bg-red-700" href="#">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- top header end -->
+  <!-- menu start -->
+  <div class="w-full py-4 bg-white header-inner " id="nav">
+    <div class="w-11/12 m-auto flex justify-between">
+     <div class="">
+       <img src="images/logo.png" alt="">
+     </div>
+    
+     <div id="toggle" class="w-full  ">
+       <nav>
+        <ul class=" flex justify-end items-center ">
+          <li class="bb mr-4 font-font-semibold text-lg" ><a class="" href="index.html">Home</a></li>
+          <li class="bb mr-4 font-font-semibold text-lg" ><a class="" href="about.html">About us</a></li>
+          <li class="bb mr-4 font-font-semibold text-lg" ><a class="" href="Admission.html">Admission</a></li>
+          <li class="bb mr-4 font-font-semibold text-lg" ><a class="" href="Courses.html">All Courses</a></li>
+          <li class="bb mr-4 font-font-semibold text-lg" ><a class="" href="events.html">Events</a></li>
+          <li class="bb mr-4 font-font-semibold text-lg" ><a class="" href="gallery.html">Gallery</a></li>
+          <li class="bb mr-4 font-font-semibold text-lg" ><a class="" href="student.html">Student</a></li>
+          <li class="bb mr-4 font-font-semibold text-lg" ><a class="" href="cantact.html">Contact us</a></li>
+        </ul>
+       </nav>
+      
+     </div>
+    </div>
+  </div>
+  <!-- menu end -->
+  <!-- search box start -->
+   <div class="bg-indigo-900 p-3 ">
+     <div class="w-3/6 mx-auto relative">
+      <input class="w-full p-3" type="text Search" placeholder="Search course and discount courses">
+      <input class="absolute top-0 right-0 py-3 px-6 cursor-pointer bg-yellow-500 text-white font-font-semibold" type="submit" value="Search Course">
+    </div>
+   </div>
+  </div>
+   <div class="responsiv block lg:hidden">
+    <div class="w-full p-2 bg-white fixed top-0 left-0 z-20 ">
+      <div class="w-11/12 m-auto flex justify-between">
+       <div class="">
+         <img src="images/logo.png" alt="">
+       </div>
+  
+       <div class="w-10 h-10 flex justify-center items-center border border-gray-500 text-gray-700">
+           <button class="p-4" id="m_click"><i class="fa fa-bars text-xl"></i></button>
+       </div>
+      </div>
+    </div>
+  
+    <div id="addclass" class="w-72 bg-white z-30 p-2 fixed top-0 -right-72 h-full ">
+         
+    <div class="w-10 h-10 flex justify-center items-center border border-gray-500 text-gray-700">
+        <button class="p-4" id="r_class"><i class="fa fa-times text-xl"></i></button>
+    </div>
+    <div id="toggle" class=" w-full flex  p-5">
+      <ul class="text-gray-700 text-xl w-full">
+        <li class="mb-4 w-full r_bb" ><a href="index.html">Home</a></li>
+        <li class="mb-4 w-full r_bb" ><a href="about.html">About us</a></li>
+        <li class="mb-4 w-full r_bb" ><a href="Admission.html">Admission</a></li>
+        <li class="mb-4 w-full r_bb" ><a href="Courses.html">All Courses</a></li>
+        <li class="mb-4 w-full r_bb" ><a href="events.html">Events</a></li>
+        <li class="mb-4 w-full r_bb" ><a href="gallery.html">Gallery</a></li>
+        <li class="mb-4 w-full r_bb" ><a href="student.html">Student</a></li>
+        <li class="mb-4 w-full r_bb" ><a href="cantact.html">Contact us</a></li>
+        <li id="a"  class="mb-4 w-full r_bb" ><a href="#">Sign In</a></li>
+        <li id="b" class="mb-4 w-full r_bb" ><a href="#">Sign Up</a></li>
+      </ul>
+    </div>
+        <div class="">
+  
+        </div>
+    </div>
+  
+    <!--  -->
+    <!-- search box start -->
+   <div class="bg-indigo-900 pt-5 pb-2 mt-12 z-10">
+      <div class=" sm:w-5/6 w-11/12  mx-auto relative">
+       <input class="w-full p-3" type="text Search" placeholder="Search course and discount courses">
+       <input class="absolute top-0 right-0 py-3 px-6 cursor-pointer bg-yellow-500 text-white font-font-semibold" type="submit" value="Search Course">
+     </div>
+    </div>
+  </div>
+   <!-- search box end -->
+  <!-- popup sineup start -->
+   <div id="register" class="f_blar overflow-auto  fixed top-0 left-0 right-0 bottom-0 hidden ">
+     <div id="sho"  class=" w-full h-full relative "></div>
+    <div  class="sm:w-3/5 w-11/12 m-auto bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col  lg:flex-row my-52 lg:my-0"> 
+  
+      <div class="lg:w-3/5 flex-col lg:flex-row w-full">
+        <div class="flex justify-start p-1">
+            <div class="w-10 h-10 flex justify-center items-center border border-gray-500 text-gray-700">
+              <button class="p-4" id="register_btn"><i class="fa fa-times text-xl"></i></button>
+            </div>
+        </div>
+          <div class="py-4 px-10">
+            <p class="text-3xl text-gray-700">Create an Account</p>
+            <p class="text-gray-600 mt-2">Don't have an account? Create your account. It's take less then a minutes</p>
+            <div class="mt-5">
+              <input class="border border-gray-500 p-2 w-full mb-2" type="text" placeholder="nane">
+              <input class="border border-gray-500 p-2 w-full mb-2" type="email" placeholder="email">
+              <input class="border border-gray-500 p-2 w-full mb-2" type="password" placeholder="password">
+              <input class="border px-4 py-2 bg-yellow-500 text-white text-xl font-bold mb-2 cursor-pointer" type="submit"value="Register">
+            </div>
+            <p>Are you a already member ? <a href="#">Login </a> </p>
+          </div>         
+      </div>
+      <div class="lg:w-2/5 w-full bg-indigo-900  p-16">
+       <div class="text-white border-b border-gray-500 pb-4">
+        <p class="text-4xl font-bold mb-4" >Hello....</p>
+        <p>Don't have an account? Create your account. It's take less then a minutes</p>
+       </div>
+       <div class="mt-4">
+         <a class="bg-blue-700 w-full block py-2 px-4 text-white font-bold mb-2" href="">
+           <i class="fa fa-facebook"></i>
+           <span>facebook</span>
+         </a>
+  
+         <a class="bg-blue-800 w-full block py-2 px-4 text-white font-bold mb-2" href="">
+          <i class="fa fa-twitter"></i>
+          <span>twitter</span>
+        </a>
+  
+        <a class="bg-red-700 w-full block py-2 px-4 text-white font-bold mb-2" href="">
+          <i class="fa fa-google-plus"></i>
+          <span>google-plus</span>
+        </a>
+       </div>
+      </div>
+   </div>
+   </div>
+       
+   <!-- popup end -->
+   <!-- popup sineup start -->
+   <div id="login" class="f_blar overflow-auto  fixed top-0 left-0 right-0 bottom-0 hidden ">
+    <div id="show"  class=" w-full h-full relative "></div>
+   <div  class="sm:w-3/5 w-11/12 m-auto bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col  lg:flex-row my-52 lg:my-0"> 
+  
+     <div class="lg:w-3/5 flex-col lg:flex-row w-full">
+       <div class="flex justify-start p-1">
+           <div class="w-10 h-10 flex justify-center items-center border border-gray-500 text-gray-700">
+             <button class="p-4" id="login_btn"><i class="fa fa-times text-xl"></i></button>
+           </div>
+       </div>
+         <div class="py-4 px-10">
+           <p class="text-3xl text-gray-700">Create an Account</p>
+           <p class="text-gray-600 mt-2">Don't have an account? Create your account. It's take less then a minutes</p>
+           <div class="mt-5">
+             <input class="border border-gray-500 p-2 w-full mb-2" type="text" placeholder="nane">
+             <input class="border border-gray-500 p-2 w-full mb-2" type="password" placeholder="password">
+             <input class="border px-4 py-2 bg-yellow-500 text-white text-xl font-bold mb-2 cursor-pointer" type="submit"value="Sign In">
+           </div>
+           <p>Are you a already member ? <a href="#">Login </a> </p>
+         </div>         
+     </div>
+     <div class="lg:w-2/5 w-full bg-indigo-900  p-16">
+      <div class="text-white border-b border-gray-500 pb-4">
+       <p class="text-4xl font-bold mb-4" >Hello....</p>
+       <p>Don't have an account? Create your account. It's take less then a minutes</p>
+      </div>
+      <div class="mt-4">
+        <a class="bg-blue-700 w-full block py-2 px-4 text-white font-bold mb-2" href="">
+          <i class="fa fa-facebook"></i>
+          <span>facebook</span>
+        </a>
+  
+        <a class="bg-blue-800 w-full block py-2 px-4 text-white font-bold mb-2" href="">
+         <i class="fa fa-twitter"></i>
+         <span>twitter</span>
+       </a>
+  
+       <a class="bg-red-700 w-full block py-2 px-4 text-white font-bold mb-2" href="">
+         <i class="fa fa-google-plus"></i>
+         <span>google-plus</span>
+       </a>
+      </div>
+     </div>
+  </div>
+  </div>
+      
+  <!-- popup end -->
+
+
+
+
+<div class="bg-indigo-900 mt-20">
+    <div class="flex lg:flex-row flex-col items-center ">
+        <div class="md:w-1/2 bg-indigo-900 py-20 sm:px-10 px-4 text-center">
+        <p class="text-6xl font-bold text-white">Request an </p>
+        <p class="text-6xl font-bold text-white">Admission </p>
+        <p class="mt-10 text-lg text-gray-400">Fusce purus mauris, blandit vitae purus eget, viverra volutpat nibh. Nam in elementum nisi, a placerat nisi. Quisque ullamcorper magna in odio rhoncus semper.Sed nec ultricies velit. Aliquam non massa id enim ultrices aliquet a ac tortor.</p>
+        <p class="mt-5 text-lg text-gray-400">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+         
+        <p class="text-4xl font-bold text-gray-100 mt-10">Help Line </p>
+        <p class="text-4xl font-bold text-gray-100 ">+010 4561 32145 </p>
+
+        </div>
+
+
+
+        <div class="lg:w-1/2 w-full p-10 bg-white">
+
+            <div class=" p-4">
+
+                  <div class="flex flex-col md:flex-row w-full">
+                    <label class="text-xl mr-2 mb-5 sm:w-3/12 " for="">Name:</label>
+                    <input class="md:w-9/12 border border-gray-500 px-4 py-2 mb-5" type="text" placeholder="name"> 
+                  </div>
+              
+                  <div class="flex flex-col md:flex-row w-full">
+                    <label class="text-xl mr-2 mb-5 w-3/12 " for="">Phone:</label>
+                    <input class="md:w-9/12 border border-gray-500 px-4 py-2 mb-5" type="text" placeholder="Enter your phone number"> 
+                  </div>
+
+                  <div class="flex flex-col md:flex-row w-full">
+                    <label class="text-xl mr-2 mb-5 w-3/12 " for="">Email Id:</label>
+                    <input class="md:w-9/12 border border-gray-500 px-4 py-2 mb-5" type="text" placeholder="Enter your phone number"> 
+                  </div>
+
+                   
+                  <div class="flex flex-col md:flex-row w-full">
+                    <label class="text-xl mr-2 mb-5 w-3/12 " for="">Education:</label>
+                    <input class="md:w-9/12 border border-gray-500 px-4 py-2 mb-5" type="text" placeholder="Enter your education"> 
+                  </div>
+
+                 
+                  <div class="flex flex-col md:flex-row w-full">
+                    <label class="text-xl mr-2 mb-5 w-3/12 " for="">Education:</label>
+                    <select class="md:w-9/12 border border-gray-500 px-4 py-2 mb-5" name="" id="">
+                        <option value="">-- Select course --</option>
+                        <option value="">Accounting/Finance</option>
+                        <option value="">Art/Design</option>
+                        <option value="">Business Management</option>
+                        <option value="">Physical Education</option>
+                        <option value="">civil engineering</option>
+                        <option value="">Marine Engineering</option>
+                        
+                    </select> 
+                  </div>
+                 
+                  <div class="flex flex-col md:flex-row w-full">
+                    <label class="text-xl mr-2 mb-5 w-3/12 " for=""></label>
+                    <input class="md:w-9/12 border  px-4 py-2 mb-5 bg-yellow-500 cursor-pointer text-white" type="submit"value="APPLY NOW"> 
+                  </div>
+            </div>  
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- start -->
+
+<div class="p-8 bg-yellow-500 mt-20 ">
+    <div class="w-10/12 mx-auto grid lg:grid-cols-4 gap-4">
+        <div class="">
+          <img src="images/3.png" alt="">
+        </div>
+        <div class="col-span-2">
+          <p class="text-2xl font-bold mb-4 text-white">therefore always free from repetition</p>
+          <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+        </div>
+        <div class="flex justify-center items-center">
+          <a class="border border-white p-4 rounded-full text-white hover:bg-white hover:text-black hover:border-black transition duration-500" href="course-details.html">Book This Course</a>
+        </div>
+    </div>
+    </div>
+    <!-- end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- bottom menu start -->
+<div class="p-5 bg-indigo-900">
+  <div class="w-11/12 mx-auto ">
+    <div class="grid sm:grid-cols-3 gap-8 py-4 border-b border-gray-500">
+      <div class="">
+        <p class="text-gray-300 text-2xl">Top Courses</p>
+          <ul class="mt-2 text-gray-400 ">
+            <li class="mb-2 hover:text-white" ><a href="#">Accounting/Finance</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">Art/Design</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#"></a>Business Management</li>
+            <li class="mb-2 hover:text-white" ><a href="#">Physical Education</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">civil engineering</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">Marine Engineering</a></li>
+            
+          </ul>
+      </div>
+      <div class="">
+        <p class="text-gray-300 text-2xl">New Courses</p>
+          <ul class="mt-2 text-gray-400 ">
+            <li class="mb-2 hover:text-white" ><a href="#">Sciences</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">Web Design/Development</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">Google Business</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">Networking Courses</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">Statistics</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#"> Information technology</a></li>
+            
+          </ul>
+      </div>
+      <div class="">
+        <p class="text-gray-300 text-2xl">New Courses</p>
+          <ul class="mt-2 text-gray-400 ">
+            <li class="mb-2 hover:text-white" ><a href="#">HELP & SUPPORT</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">24x7 Live help</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">Feedback</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">Safety Tips</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">Contact us</a></li>
+            <li class="mb-2 hover:text-white" ><a href="#">FAQs </a></li>
+            
+          </ul>
+      </div>
+    </div> 
+  
+  <div class="grid sm:grid-cols-3 gap-8 py-4">
+     <div class="">
+       <p class="text-gray-300 text-2xl">Get In Touch</p>
+       <ul class="mt-2 text-gray-400">
+        <li class="mb-2 hover:text-white" >Address: 28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
+        <li class="mb-2 hover:text-white" >Phone: +101-1231-4321 </li>
+        <li class="mb-2 hover:text-white" ><a href="#">Email: info@edu.com</a></li>
+       </ul>
+     </div>
+  
+     <div class="">
+       <p class="text-gray-300 text-xl mb-4">DOWNLOAD OUR FREE MOBILE APPS</p>
+       <div class="flex">
+         <a href="#"> 
+           <img class="mr-1" src="images/app-store-icon.png" alt="">
+         </a>
+         <a href="#"> 
+          <img src="images/google-play-icon.jpg" alt="">
+        </a>
+         
+       </div>
+     </div>
+  
+     <div class="">
+       <p class="text-gray-300 text-xl mb-4">SOCIAL MEDIA</p>
+      <div class="px-4 flex mb-10">
+  
+        <a class=" mr-2 block border border-gray-500 w-10 h-10 rounded-full  flex justify-center items-center text-xl text-white hover:text-white " href="#">
+         <i class="fa fa-facebook"></i>
+        </a>
+  
+        <a class=" mr-2 block border border-gray-500 w-10 h-10 rounded-full  flex justify-center items-center text-xl text-white hover:text-white " href="#">
+          <i class="fa fa-twitter"></i>
+         </a>
+  
+         <a class=" mr-2 block border border-gray-500 w-10 h-10 rounded-full  flex justify-center items-center text-xl text-white hover:text-white " href="#">
+          <i class="fa fa-google-plus"></i>
+         </a>
+  
+  
+         <a class=" mr-2 block border border-gray-500 w-10 h-10 rounded-full  flex justify-center items-center text-xl text-white hover:text-white " href="#">
+          <i class="fa fa-youtube"></i>
+         </a>
+  
+  
+        
+  
+    </div>
+     </div>
+  
+  </div>
+  
+  </div>
+  </div>
